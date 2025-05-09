@@ -1,56 +1,62 @@
 import React from 'react';
-import { CiFacebook } from "react-icons/ci";
+import { CiFacebook, CiTwitter } from "react-icons/ci";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { CiTwitter } from "react-icons/ci";
 import { BiLogoGmail } from 'react-icons/bi';
+import logo from '../logos/proflogo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800  items-center text-center gap-5 ">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4">
-          {/* Strength of Execution */}
-          <div className="col-span-2 md:col-span-1">
-            <h3 className="text-lg font-bold text-white mb-4">Strength of Execution</h3>
-            <p className="text-gray-400">
-              We have a strong track record of execution and commissioning of projects on time.
-            </p>
-          </div>
-          {/* Construction & Erection */}
-          <div className="col-span-2 md:col-span-1">
-            <h3 className="text-lg font-bold text-white mb-4">Construction & Erection</h3>
-            <p className="text-gray-400">
-              SEPL offers the benefits of one decade of experience in erection & construction.
-            </p>
-          </div>
-          {/* Excellence */}
-          <div className="col-span-2 md:col-span-2">
-            <h3 className="text-lg font-bold text-white mb-4">Excellence</h3>
-            <p className="text-gray-400">
-              Our achievements are a testimony to our mission of attaining excellence in infrastructure.
-            </p>
-          </div>
+    <footer className="bg-gray-800 text-gray-300 font-sans">
+      {/* Top section */}
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-3">Strength of Execution</h3>
+          <p className="text-gray-400 text-sm">
+            We have a strong track record of execution and commissioning of projects on time.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-3">Construction & Erection</h3>
+          <p className="text-gray-400 text-sm">
+            SEPL offers the benefits of one decade of experience in erection & construction.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold text-white mb-3">Excellence</h3>
+          <p className="text-gray-400 text-sm">
+            Our achievements are a testimony to our mission of attaining excellence in infrastructure.
+          </p>
         </div>
       </div>
-      <div className="bg-gray-900">
-        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex text-center justify-between items-center">
-          <div className="text-white flex justify-center items-center text-center">
-            &copy; Kulswamini Enterprises Limited
-          </div>
-          <div className="social flex gap-6">
-            <a href="https://twitter.com" className="text-gray-400 hover:text-white">
-              <CiFacebook className="social_icon-twitter s-14" size={"24px"}/>
-            </a>
-            <a href="https://facebook.com" className="text-gray-400 hover:text-white">
-              <AiOutlineInstagram className="social_icon-facebook s-18" size={"24px"}/>
-            </a>
-            <a href="https://instagram.com" className="text-gray-400 hover:text-white">
-              <CiTwitter className="social_icon-gplus s-18" size={"24px"}/>
-            </a>
-            <a href="https://gmail.com" className="text-gray-400 hover:text-white">
-                  <BiLogoGmail className="social-icon" size={"24px"} />
-                </a>
-          </div>
+
+      {/* Divider */}
+      <div className="border-t border-gray-700"></div>
+
+      {/* Bottom section */}
+      <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
+        {/* Logo and copyright */}
+        <div className="flex items-center gap-3 text-sm text-gray-400 mb-4 md:mb-0">
+          {/* <img src={logo} alt="Logo" className="h-10 w-auto object-contain" /> */}
+          <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+                K<span className="text-orange-500">E</span>
+              </h1>
+          <span>&copy; {new Date().getFullYear()} Kulswamini Enterprises. All rights reserved.</span>
+        </div>
+
+        {/* Social Icons */}
+        <div className="flex gap-5">
+          <a href="https://facebook.com" target="_blank" className="hover:text-white transition duration-300">
+            <CiFacebook size={24} />
+          </a>
+          <a href="https://instagram.com" target="_blank" className="hover:text-white transition duration-300">
+            <AiOutlineInstagram size={24} />
+          </a>
+          <a href="https://twitter.com" target="_blank" className="hover:text-white transition duration-300">
+            <CiTwitter size={24} />
+          </a>
+          <a href="mailto:your-email@example.com" className="hover:text-white transition duration-300">
+            <BiLogoGmail size={24} />
+          </a>
         </div>
       </div>
     </footer>
