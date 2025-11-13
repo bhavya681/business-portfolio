@@ -16,18 +16,21 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:order-2">
             <div className="bg-white rounded-lg shadow-md p-4 cursor-pointer">
-              <h2 className="text-xl font-bold mb-4">Contact Info</h2>
-              <ul className="text-gray-700">
-                <li className="mb-2">
-                  Shop No.-29 & 89, Shivaji Complex
-                  <br />
-                  (Navjeevan Vihar, P.O.-Vindhyanagar,
-                  <br />
-                  Distt. Singraulli (M.P.)- 486885
-                </li>
-                <li className="mb-2">07805 244236</li>
-                <li className="mb-2">corporationshivam@gmail.com</li>
-              </ul>
+            <h2 className="text-xl font-bold mb-4">Contact Info</h2>
+<ul className="text-gray-700">
+  <li className="mb-2">
+    <strong>Office Address:</strong><br />
+    Shop No-04, Opp. M.S.E.B Colony,<br />
+    Pasthal, Palghar, 401504
+  </li>
+  <li className="mb-2">
+    <strong>Factory Address:</strong><br />
+    Plot No-J-221, MIDC, Tarapur
+  </li>
+  <li className="mb-2">+91 98239 15169 or +91 84460 55551</li>
+  <li className="mb-2">kulswaminie.kspn@gmail.com</li>
+</ul>
+
 
               <h2 className="text-xl font-bold mt-6 mb-4 ">Social Contact</h2>
               <div className="flex space-x-4 justify-center text-center items-center">
